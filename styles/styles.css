@@ -1,74 +1,85 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-}
-main {
-    background-color: white;
-    width: 70%;
-    margin: 0 auto 1rem auto;
-    padding: 0 1rem 2rem 1rem;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f6f6f6;
 }
 
-* {
-    box-sizing: border-box;
+#ice-cream-form {
+  background-color: white;
+  width: min(520px, 90%);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
 }
 
-#submit-button{
-  border: none;
-  background-color: darkgreen;
-  padding: 0.5rem 0.75rem;
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin: 1.25rem 0;
+  padding: 1rem;
+}
+
+legend {
+  color: darkgreen;
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  padding: 0 0.75rem;
+  text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #999;
   border-radius: 0.25rem;
-  color:white;
-  font-size: 1rem;
-  width: 70%;
-  display: block;
-  margin: 1rem auto;
-}
-
-#details {
-    color: darkgreen;
-    font-size: 1.5rem;
-    padding: 0 1rem; /* 0 is top and bottom and 1 rem is left and right */
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-}
-
- #name-details {
-    display: block;
-    padding-bottom: 0.2rem;
-    padding: 0.5rem;
-}
-
-input[type="text"], #fname, #lname,#comments, select{
-    width: 100%;
-    border:1px solid;
-    border-radius: .25rem;
-    margin-bottom: 1rem;
-    padding: 1rem 0rem;
+  margin: 0.25rem 0 1rem 0;
+  padding: 0.6rem;
 }
 
 label {
-  margin: 0.25rem;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
-fieldset {
-    border-radius: .5rem;
-    margin: 5rem;
-    padding: 1rem;
+.subheading {
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
 }
 
-legend{
-    margin-bottom: 0.5rem;
-    padding-top: 1rem;
+#ice-cream-form input[type="radio"],
+#ice-cream-form input[type="checkbox"] {
+  margin-right: 0.35rem;
 }
 
-img#cone-pic {
-    display: block;
-    margin: 1rem auto;
-    border-radius: .5rem;
-    float: right;
+#ice-cream-form input[type="radio"] + label,
+#ice-cream-form input[type="checkbox"] + label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+
+#submit-button {
+  border: none;
+  background-color: darkgreen;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  width: 70%;
+  display: block;
+  margin: 1rem auto 0 auto;
 }
