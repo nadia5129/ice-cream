@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+main {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#submit-button{
+ border: none;
+   background-color: darkgreen;
+   border-color: darkgreen;
+   padding: 0.5rem 0.75rem;
+   border-radius: .25rem;
+   text-decoration: none;
+   color: white;
+   font-size: 1rem;
+}
+
+#details {
+    color: darkgreen;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding: 0 1rem; /* 0 is top and bottom and 1 rem is left and right */
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+ #name-details {
+    display: block;
+    padding-bottom: 0.2rem;
+    padding: 0.5rem;
+}
+
+input[type="text"], #fname, #lname,#comments, select{
+    width: 100%;
+    border:1px solid;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+    
+}
+
+label {
+  margin: 0.25rem;
+}
+
+fieldset {
+    border-radius: .5rem;
+    margin: 5rem;
+    padding: 1rem;
+}
+
+legend{
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+img#cone-pic {
+    display: block;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    float: right;
+}
