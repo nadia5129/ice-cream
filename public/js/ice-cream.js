@@ -3,10 +3,12 @@
 document.getElementById("ice-cream-form").onsubmit = () => {
     clearErrors();
     return validate();
+};
 
 
     function validate() {
     let isValid = true;
+    
 
     // Reset all err
     clearErrors();
