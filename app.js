@@ -7,8 +7,12 @@ const app = express();
 //define a port number
 const PORT  = 3000;
 
+// 
+app.use(express.static('public'));
+
+
 app.get('/', (req, res) => {
-    res.send('Welcome to My Ice Cream Shop!');
+    res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
 app.listen(PORT, () => {
