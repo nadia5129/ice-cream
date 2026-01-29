@@ -25,8 +25,10 @@ document.getElementById("ice-cream-form").onsubmit = () => {
         isValid = false;
     }
     // Cone is selected
-    let cone = document.getElementById("cone").value;
-    if (cone === "none") {
+    let waffleCone = document.getElementById("cone-waffle").checked;
+    let sugarCone = document.getElementById("cone-sugar").checked;
+    let cupCone = document.getElementById("cone-cup").checked;
+    if (!waffleCone && !sugarCone && !cupCone) {
         document.getElementById("cone-err").style.display = "block";
         isValid = false;
     }
