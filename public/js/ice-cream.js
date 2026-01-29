@@ -1,7 +1,7 @@
 
 
 document.getElementById("ice-cream-form").onsubmit = () => {
-    clearErrors();
+    
     return validate();
 };
 
