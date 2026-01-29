@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,71 @@
     <link rel="icon" href="icecream.jpeg">
     <script src="js/ice-cream.js" defer></script>
 </head>
+
 <body>
     <h1> Ice Cream Order Form</h1>
 
     <form id="ice-cream-form" action="#" method="get">
 
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:
+                <span id="fname-err" class="err">First Name is required.</span>
+            </label>
+            <input type="text" id="fname" name="fname">
 
-         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-    </fieldset>
+            <label for="email">Email:
+                <span id="email-err" class="err">Valid email is required.</span>
+            </label>
+            <input type="email" id="email" name="email">
+        </fieldset>
 
-    <fieldset>
-        <legend>Order Details</legend>
-        <label for="flavor">Choose a flavor:</label>
-        <select name="flavor" id="flavor"> 
-             <option value="none">Select a flavor…</option>
-            <option value="vanilla">Vanilla</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="strawberry">Strawberry</option>
-            <option value="mint">Mint</option>
-        </select>
-    
-      <p class="subheading">Choose your cone:</p>
-      <input type="radio" id="cone-waffle" value="waffle" name="method" required>
-      <label for="cone-waffle">Waffle Cone</label>
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="flavor">Choose a flavor:</label>
+            <span id="flavor-err" class="err">Flavor is required.</span>
+            <select name="flavor" id="flavor">
+                <option value="none">Select a flavor…</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="mint">Mint</option>
+            </select>
 
-      <input type="radio" id="cone-sugar" value="sugar" name="method">
-      <label for="cone-sugar">Sugar Cone</label>
+            <p class="subheading">Choose your cone:</p>
+            <span id="cone-err" class="err">Cone is required.</span>
+            <input type="radio" id="cone-waffle" value="waffle" name="method" required>
+            <label for="cone-waffle">Waffle Cone</label>
 
-      <input type="radio" id="cone-cup" value="cup" name="method">
-      <label for="cone-cup">Cup</label>
-     
-       
-      <p class="subheading">Toppings:</p>
-      <label>
-      <input type="checkbox" id="topping-sprinkles" 
-      value="Sprinkles" name="topping[]"> Sprinkles</label>
+            <input type="radio" id="cone-sugar" value="sugar" name="method">
+            <label for="cone-sugar">Sugar Cone</label>
 
-      <label>
-      <input type="checkbox" id="topping-nuts" 
-      value="Nuts" name="topping[]"> Nuts</label>
+            <input type="radio" id="cone-cup" value="cup" name="method">
+            <label for="cone-cup">Cup</label>
 
-     <label>
-     <input type="checkbox" id="topping-cherry" 
-     value="Cherry" name="topping[]">Cherry</label>
 
-     <label>
-     <input type="checkbox" id="topping-cream"
-      value="Whipped-cream" name="topping[]">Whipped cream</label>
-        
-   
-    <label for="comments">Additional comments:</label>
-     <textarea rows="5"  id="comments" name="comments"></textarea>
-    </fieldset>
 
-    <button type="submit" id="submit-button">Submit Order</button>
+            <p class="subheading">Toppings:</p>
+            <label>
+                <input type="checkbox" id="topping-sprinkles" value="Sprinkles" name="topping[]"> Sprinkles</label>
+
+            <label>
+                <input type="checkbox" id="topping-nuts" value="Nuts" name="topping[]"> Nuts</label>
+
+            <label>
+                <input type="checkbox" id="topping-cherry" value="Cherry" name="topping[]">Cherry</label>
+
+            <label>
+                <input type="checkbox" id="topping-cream" value="Whipped-cream" name="topping[]">Whipped cream</label>
+
+
+            <label for="comments">Additional comments:</label>
+            <textarea rows="5" id="comments" name="comments"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit-button">Submit Order</button>
     </form>
-        
+
 </body>
+
 </html>
