@@ -10,7 +10,18 @@ document.getElementById("submit-button").onsubmit = () => {
         // Show fname-err
     }
     // Email is not empty and contains an @
+    let email= document.getElementById("email").value.trim();
+    if(!email || !email.includes("@")) {
+        document.getElementById("email-err").style.display = "block";
+         isValid = false;
+       
+    }
     // Flavor is selected
+    let flavor = document.getElementById("flavor").value;
+    if (flavor === "none") {
+        document.getElementById("flavor-err").style.display = "block";
+          isValid = false;
+    }
     // Cone is selected
 
     return isValid
