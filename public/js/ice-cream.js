@@ -1,15 +1,8 @@
 
 
 document.getElementById("ice-cream-form").onsubmit = () => {
-    
-    return validate();
-};
-
-
-    function validate() {
-
     let isValid = true;
-    
+ 
 
     // Reset all err
     clearErrors();
