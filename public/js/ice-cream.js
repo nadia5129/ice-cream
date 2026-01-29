@@ -4,6 +4,7 @@ document.getElementById("ice-cream-form").onsubmit = () => {
     let isValid = true;
 
     // Reset all err
+    clearErrors();
 
     // Name is not empty
     let fname = document.getElementById("fname").value.trim();
@@ -30,7 +31,7 @@ document.getElementById("ice-cream-form").onsubmit = () => {
         isValid = false;
     }
 
-    return isValid
+    return isValid;
 }
 
 function clearErrors() {
